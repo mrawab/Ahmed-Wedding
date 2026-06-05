@@ -485,9 +485,17 @@ section {
 
 .invitation-text {
   font-family: var(--font-calligraphy);
+  font-size: clamp(20px, 4vw, 24px);
+  color: var(--primary);
+  margin: 25px 0 20px;
+  font-weight: normal;
+}
+
+.invitation-text-added {
+  font-family: var(--font-arabic);
   font-size: clamp(18px, 4vw, 22px);
   color: var(--primary);
-  margin: 35px 0 20px;
+  margin: 30px 0 10px 0;
   font-weight: normal;
 }
 
@@ -996,5 +1004,61 @@ section {
     transform: translate(calc(-50% + var(--tx)), calc(-50% + var(--ty)))
       scale(0);
     opacity: 0;
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: #120e0c !important;
+    color: var(--text) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    overflow: visible !important;
+    overscroll-behavior: auto !important;
+  }
+
+  #particle-overlay,
+  .sparks-container,
+  .flower-particle,
+  .gold-spark {
+    display: none !important;
+  }
+
+  .map-placeholder iframe {
+    display: none !important;
+  }
+
+  .venue-card,
+  .schedule-grid,
+  .count-item,
+  .detail-item,
+  .btn,
+  .footer,
+  .letter,
+  .card-details-row {
+    page-break-inside: avoid;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: var(--text-light);
+  }
+
+  .btn,
+  .btn-primary,
+  .btn-gold,
+  .btn-outline {
+    box-shadow: none !important;
   }
 }
