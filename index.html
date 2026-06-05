@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف أحمد وإيناس | Ahmed & Einas Wedding Invitation</title>
+    <meta name="description"
+        content="يسعدنا دعوتكم لحضور عقد قران وحفل زفاف أحمد وإيناس. Join us to celebrate the wedding of Ahmed and Einas.">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="دعوة زفاف أحمد وإيناس | Ahmed & Einas">
+    <meta property="og:description"
+        content="يسعدنا دعوتكم لحضور عقد قران وحفل زفاف أحمد وإيناس. انضموا إلينا للاحتفال!">
+    <meta property="og:image" content="invite_card.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="دعوة زفاف أحمد وإيناس | Ahmed & Einas">
+    <meta name="twitter:description"
+        content="يسعدنا دعوتكم لحضور عقد قران وحفل زفاف أحمد وإيناس. انضموا إلينا للاحتفال!">
+    <meta name="twitter:image" content="invite_card.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=El+Messiri:wght@400;700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Overlay (clips flower/spark effects) -->
+    <div id="particle-overlay"></div>
+
+    <!-- Envelope Wrapper Overlay -->
+    <div id="envelope-wrapper">
+        <div class="envelope">
+            <div class="flap top-flap"></div>
+            <div class="letter">
+                <div class="letter-content">
+                    <span class="letter-label">دعوة عقد قران وزفاف</span>
+                    <h2 class="letter-names">أحمد & إيناس</h2>
+                    <div class="letter-rings-container">
+                        <img src="rings_center.jpg" class="letter-rings" alt="Rings">
+                    </div>
+                    <p class="letter-date">12.6.2026</p>
+                    <span class="letter-tap">انقر لفتح الدعوة</span>
+                </div>
+            </div>
+            <div class="flap left-flap"></div>
+            <div class="flap right-flap"></div>
+            <div class="flap bottom-flap"></div>
+            <div class="wax-seal" id="open-envelope-btn">
+                <div class="seal-inner">
+                    <span>افتح</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="app">
+        <!-- Sparks Effect -->
+        <div class="sparks-container" id="sparks"></div>
+
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="verse">
+                <p>بسم الله الرحمن الرحيم</p>
+            </div>
+            <div class="verse">
+                <p>"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ
+                    بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+            </div>
+
+            <div class="header-welcome">
+                <p>بكل الود و الحب يتشرف</p>
+            </div>
+
+            <div class="families-container">
+                <div class="family-column">
+                    <p>آل منصور مكاوي</p>
+                    <p>آل حاج الفكي حاج محمود</p>
+                    <p>آل محمد الأمين أبو صباح</p>
+                </div>
+                <div class="family-divider-vertical"></div>
+                <div class="family-column">
+                    <p>آل الحاج احمد علي</p>
+                    <p>آل جبرنا</p>
+                    <p>آل الحاج مختار</p>
+                </div>
+            </div>
+
+            <div class="invitation-text">
+                <p>بدعوتكم لحضور عقد قران وحفل زفاف</p>
+            </div>
+
+            <h1 class="names-row">
+                <span class="title-name">باشمهندس<br><span class="groom-name">أحمد</span></span>
+                <span class="rings-separator">
+                    <img src="rings.png" alt="Rings">
+                </span>
+                <span class="title-name">الدكتورة<br><span class="bride-name">إيناس</span></span>
+            </h1>
+
+            <div class="sub-names-phrase">
+                <p>وذلك بمشيئة الله تعالى</p>
+            </div>
+
+            <!-- Details Card Layout -->
+            <div class="card-details-row">
+                <!-- Day Column -->
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div class="detail-label">يوم الجمعة</div>
+                    <div class="detail-val">12.6.2026</div>
+                </div>
+
+                <!-- Location Column -->
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="detail-label">Leciel hotel</div>
+                    <div class="detail-val">قاعة الفور سيزون</div>
+                    <div class="detail-sub">شارع اللبيني</div>
+                </div>
+
+                <!-- Time Column -->
+                <div class="detail-item">
+                    <div class="detail-icon"><i class="fa-regular fa-clock"></i></div>
+                    <div class="detail-label">الساعة</div>
+                    <div class="detail-val">الواحدة ظهراً</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section">
+            <h2 class="section-title">The Countdown</h2>
+            <div id="countdown" class="countdown-grid">
+                <div class="count-item">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="count-item">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="count-item">
+                    <span id="minutes">00</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="count-item">
+                    <span id="seconds">00</span>
+                    <label>Seconds</label>
+                </div>
+            </div>
+            <p class="countdown-message" style="direction: ltr;">In our special day we can't wait to celebrate this
+                incredible moments with you!
+            </p>
+        </section>
+
+        <!-- Venue Section -->
+        <section class="venue-section">
+            <h2 class="section-title">Location & Venue</h2>
+            <div class="venue-card">
+                <div class="venue-info">
+                    <h3>قاعة فور سيزون - فندق لو سيل</h3>
+                    <p>أول شارع اللبيني، الهرم، الجيزة</p>
+                    <p class="en" style="direction: ltr;">Four Seasons Hall - Le Ciel Hotel</p>
+                    <p class="en sub" style="direction: ltr;">First of El-Lebini St., Haram, Giza</p>
+                </div>
+                <div class="map-placeholder" id="venue-map">
+                    <a href="https://maps.google.com/?q=Sun+Hall+Four+Seasons+Halls+Pyramids+Area" target="_blank"
+                        style="display: block; width: 100%; height: 100%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.972323485098!2d31.1444983!3d29.9739775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458467d022b7a95%3A0xe54fb7a2db04cd59!2z2YLYp9i52KfYqiDZgdmI2LEg2LPZitiObjmGINin2YTZh9ix2YU!5e0!3m2!1sar!2seg!4v1715300000000!5m2!1sar!2seg"
+                            width="100%" height="100%" style="border:0; pointer-events: none;" allowfullscreen=""
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </a>
+                </div>
+                <div class="venue-actions">
+                    <a href="https://maps.google.com/?q=Sun+Hall+Four+Seasons+Halls+Pyramids+Area" target="_blank"
+                        class="btn btn-outline">Get Directions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="schedule-section">
+            <h2 class="section-title">Schedule of Events</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <span class="time" style="direction: ltr;">1:00 PM</span>
+                    <span class="event">Wedding & Ceremony Begins</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- QR & Share Section -->
+        <section class="share-section">
+            <div class="qr-container">
+                <canvas id="qrcode"></canvas>
+                <p>Scan to view invitation</p>
+            </div>
+            <div class="share-actions">
+                <button id="copy-link" class="btn btn-primary">Copy Link & Share</button>
+                <button id="rsvp-btn" class="btn btn-gold pulse">RSVP Now</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-names">Ahmed & Einas</p>
+            <!-- Couple & Roses bottom decoration -->
+            <div class="bottom-couple-container">
+                <img src="wedding_avatar.png" class="bottom-couple-img" alt="Bride and Groom Illustration">
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="main.js" defer></script>
+</body>
+
+</html>
